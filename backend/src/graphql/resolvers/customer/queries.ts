@@ -2,10 +2,12 @@ const data = [
   {
     firstName: "Marlon",
     lastName: "Brandon",
+    dateOfBirth: new Date(),
   },
   {
     firstName: "Bruce",
     lastName: "Willis",
+    dateOfBirth: new Date(),
   },
 ];
 
