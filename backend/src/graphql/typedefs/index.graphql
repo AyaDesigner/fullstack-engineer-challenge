@@ -6,6 +6,8 @@ type Query {
 
 input PolicyInput {
   provider: String
+  insuranceType: InsuranceType
+  status: PolicyStatus
 }
 
 type Mutation {
