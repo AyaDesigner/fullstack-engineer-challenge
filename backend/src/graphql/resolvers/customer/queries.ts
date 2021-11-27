@@ -1,18 +1,7 @@
-const data = [
-  {
-    firstName: "Marlon",
-    lastName: "Brandon",
-    dateOfBirth: new Date(),
-  },
-  {
-    firstName: "Bruce",
-    lastName: "Willis",
-    dateOfBirth: new Date(),
-  },
-];
+import { Customer } from "../../../db/models/customer";
 
 const customerQueries = {
-  customers: () => data,
+  customers: async () => await Customer.find({}),
 };
 
 export default customerQueries;

@@ -8,7 +8,7 @@ const resolvers = {
   Query: {
     ...customerQueries,
     ...policyQueries,
-  },
+  }
 };
 
 export default resolvers;
