@@ -3,3 +3,11 @@ scalar Date
 type Query {
   policies: [Policy]!
 }
+
+input PolicyInput {
+  provider: String
+}
+
+type Mutation {
+  updatePolicy(id: ID!, policyToUpdate: PolicyInput): Policy
+}
