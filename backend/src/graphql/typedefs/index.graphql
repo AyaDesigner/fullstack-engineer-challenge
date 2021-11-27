@@ -1,6 +1,15 @@
 scalar Date
 
 type Query {
-  customers: [Customer]!
   policies: [Policy]!
+}
+
+input PolicyInput {
+  provider: String
+  insuranceType: InsuranceType
+  status: PolicyStatus
+}
+
+type Mutation {
+  updatePolicy(id: ID!, policyToUpdate: PolicyInput): Policy
 }
