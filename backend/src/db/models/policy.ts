@@ -2,10 +2,19 @@ import mongoose from "mongoose";
 const { Schema } = mongoose;
 
 const PolicySchema = new Schema({
-  customerId: {
-    type: Schema.Types.ObjectId,
-    ref: "Customer",
-    required: true,
+  customer: {
+    firstName: {
+      type: String,
+      required: true,
+    },
+    lastName: {
+      type: String,
+      required: true,
+    },
+    dateOfBirth: {
+      type: Date,
+      required: true,
+    },
   },
   provider: {
     type: String,
@@ -28,13 +37,11 @@ const PolicySchema = new Schema({
     required: true,
   },
   insuranceType: {
-    type: Schema.Types.ObjectId,
-    ref: "InsuranceType",
+    type: String,
     required: true,
   },
   status: {
-    type: Schema.Types.ObjectId,
-    ref: "InsuranceStatus",
+    type: String,
     required: true,
   },
 });
