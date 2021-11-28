@@ -5,9 +5,6 @@ const policyMutations = {
     _: any,
     { id, policyToUpdate }: { id: string; policyToUpdate: any }
   ) => {
-    console.log(id);
-    console.log(policyToUpdate);
-
     const updatedPolicy = await Policy.findByIdAndUpdate(
       id,
       {

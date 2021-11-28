@@ -84,6 +84,7 @@ const Policies = () => {
                   <tbody className="bg-white divide-y divide-gray-200">
                     {policiesData.map((policy: any) => (
                       <Policy
+                        policyId={policy._id}
                         policyNumber={policy.policyNumber}
                         provider={policy.provider}
                         status={policy.status}
