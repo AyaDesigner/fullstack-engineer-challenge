@@ -16,6 +16,10 @@ const PolicySchema = new Schema({
       required: true,
     },
   },
+  _id: {
+    type: mongoose.Types.ObjectId,
+    required: true,
+  },
   provider: {
     type: String,
     required: true,

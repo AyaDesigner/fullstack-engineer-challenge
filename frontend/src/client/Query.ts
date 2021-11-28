@@ -10,6 +10,7 @@ export const GET_POLICIES = gql`
         lastName
         dateOfBirth
       }
+      _id
       insuranceType
       status
       policyNumber

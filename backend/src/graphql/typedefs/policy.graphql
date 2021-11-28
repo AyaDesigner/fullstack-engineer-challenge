@@ -1,4 +1,5 @@
 type Policy {
+    _id: String
     customer: Customer
     provider: String
     insuranceType: InsuranceType
