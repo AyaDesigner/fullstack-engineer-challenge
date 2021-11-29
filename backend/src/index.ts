@@ -1,16 +1,11 @@
-import { port } from "./config/environment";
+import { db_connection } from "./config/environment";
 import app from "./app";
 import mongoose from "mongoose";
 
 
-mongoose
-  .connect(
-    "mongodb://127.0.0.1:27017/test"
-  )
-  .then(() => {
-    console.log("MongoDB connected successfully");
-  });
-
+mongoose.connect(db_connection).then(() => {
+  console.log("MongoDB connected successfully");
+});
 
 const start = async () => {
   try {
